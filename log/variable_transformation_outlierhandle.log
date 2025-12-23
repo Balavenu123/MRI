@@ -1,0 +1,13 @@
+2025-12-21 17:18:11,379 - INFO - Index(['var_1', 'var_2', 'var_3', 'var_4', 'var_5', 'var_6', 'var_7', 'var_8',
+       'var_9', 'var_10',
+       ...
+       'var_291', 'var_292', 'var_293', 'var_294', 'var_295', 'var_296',
+       'var_297', 'var_298', 'var_299', 'var_300'],
+      dtype='object', length=300) ---> (40000, 300)
+2025-12-21 17:18:11,380 - INFO - Index(['var_1', 'var_2', 'var_3', 'var_4', 'var_5', 'var_6', 'var_7', 'var_8',
+       'var_9', 'var_10',
+       ...
+       'var_291', 'var_292', 'var_293', 'var_294', 'var_295', 'var_296',
+       'var_297', 'var_298', 'var_299', 'var_300'],
+      dtype='object', length=300) ---> (10000, 300)
+2025-12-21 17:18:18,694 - ERROR - Error in line 22: The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.

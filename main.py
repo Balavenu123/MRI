@@ -16,7 +16,7 @@ logger = setup_logging('main')
 from model_training import TRAINING
 
 
-class HEART_DISEASE_PREDICTION:
+class MRI:
     def __init__(self,path):
         try:
             self.path=path
@@ -125,7 +125,7 @@ class HEART_DISEASE_PREDICTION:
 
 if __name__ == '__main__':
     try:
-        obj=HEART_DISEASE_PREDICTION('D:\\Projects\\MRI\\dataset_1.csv')
+        obj=MRI('D:\\Projects\\MRI\\dataset_1.csv')
         obj.missing_values()
         #obj.var_trans_out_handling()
         # obj.data_balancing()
@@ -133,4 +133,5 @@ if __name__ == '__main__':
         obj.algo()
     except Exception as e:
         error_type, error_msg, error_line = sys.exc_info()
+
         logger.info(f'Error in line no:{error_line.tb_lineno} due to:{error_msg}')
